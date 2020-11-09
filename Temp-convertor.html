@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Temperature Conversion</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  </head>
+  <body>
+    <div class = "container bg-light">
+      <img src = "Temprature.jpg" class = "float-left img-thumbnail" alt="Thermometer Image" style="width:250px;height:160px;">
+    <div class ="container my-3 bg-light text-black jumbotron  text-center">
+      <h3> WELCOME TO TEMPERATURE CONVERTOR WEBPAGE</h3>
+       </div>
+       <div class = "container my-3 jumbotron text-center">
+    <h4 class ="text-danger"> The below converter is used to change between different types of temperature degrees.</h4>
+    </div>
+    
+    <div class = "container-fluid  text-center ">
+    <div = ng-app>
+      <p class = "text-info"> <em><strong>First, change from Celsius to Fahrenheit</strong></em></p>
+      <p>Temp. in <sup>o</sup>C: <input type="text" placeholder="Please enter a number" ng-model = "C"></p>
+      <p style="color:red"><strong> The result is:</strong>
+      {{C * (9/5)+ 32}} <sup>o</sup>F</p>
+
+      <p class = "text-info"><em><strong>Second, change from Fahrenheit to Celsius</strong></em></p>
+      <p>Temp. in <sup>o</sup>F: <input type="text" placeholder="Please enter a number" ng-model = "F"></p>
+      <p style="color:red"><strong> The result is:</strong>
+      {{(F-32)/(1.8)}} <sup>o</sup>C</p>
+    </div>
+    </div>
+      <div class = "container my-3 text-center">
+      <h5 class = "text-success">"Thank you and I hope you enjoy my simple temp. convertor"</h5>
+      <p>&copy Maryam Alhefeiti</p>
+          </div>
+          </div>
+  </body>
+</html>
